@@ -53,8 +53,8 @@ Employment_Growth_AR_Model/
 ├── PAYEMS.csv
 ├── README.md
 ├── .gitignore
-├── report/
-│   └── employment_growth_report.pdf
+├── Report/
+│   └── report.pdf
 └── figures/
     ├── employment_growth_plot.png
     └── forecast.png
