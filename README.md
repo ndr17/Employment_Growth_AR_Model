@@ -1,8 +1,6 @@
 # Forecasting US Employment Growth with an AR(3) Model
 
 This project applies an Autoregressive model of order three (AR(3)) to US employment data to analyze year-on-year employment growth and produce 24-month-ahead forecasts.
-The employment data are from the Federal Reserve Bank of St. Louis (FRED):
-[Total Nonfarm Payroll Employment (PAYEMS)](https://fred.stlouisfed.org/series/PAYEMS)
 The project was developed for the Macroeconometrics course at the University of Palermo.
 
 
@@ -16,7 +14,8 @@ The project was developed for the Macroeconometrics course at the University of 
 - Construct forecast intervals using the Root Mean Squared Forecast Error (RMSFE).
 
 ## Data
-
+The employment data are from the Federal Reserve Bank of St. Louis (FRED):
+[Total Nonfarm Payroll Employment (PAYEMS)](https://fred.stlouisfed.org/series/PAYEMS)
 The analysis uses monthly US employment data from January 1974 to December 2025.
 The year-on-year employment growth rate is calculated as:
 
