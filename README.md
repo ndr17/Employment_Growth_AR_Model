@@ -51,9 +51,12 @@ The full estimation results, mathematical derivations and discussion are availab
 Employment_Growth_AR_Model/
 ├── main.py
 ├── PAYEMS.csv
-├── employment_growth_plot.png
-├── forecast.png
+├── README.md
+├── .gitignore
 ├── report/
-│   └── report.pdf
+│   └── employment_growth_report.pdf
+└── figures/
+    ├── employment_growth_plot.png
+    └── forecast.png
 ├── .gitignore
 └── README.md
