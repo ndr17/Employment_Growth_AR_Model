@@ -21,21 +21,16 @@ fig, axes = plt.subplots(2, 1, figsize=(10, 8), sharex=True)
 
 # Employment level
 axes[0].plot(df.index, df["Employment"], color="black", linewidth=1.0)
-axes[0].set_title("US employment")
+axes[0].set_title("Employment Level")
 axes[0].set_xlabel("Year")
 axes[0].set_ylabel("")
 
 # Year-on-year employment growth rate
 axes[1].plot(df.index, df["Growth_Rate"], color="black", linewidth=1.0)
 axes[1].axhline(y=0, color="red", linewidth=1)
-axes[1].set_title("Year-on-year employment growth rate")
+axes[1].set_title("YoY Employment Growth Rate")
 axes[1].set_xlabel("Year")
 axes[1].set_ylabel("")
-
-# Grid
-for ax in axes:
-    ax.grid(True, color="#eeeeee", linewidth=0.8)
-
 plt.tight_layout()
 plt.savefig("employment_growth_plot.png", dpi=300, bbox_inches="tight")
 plt.show()
@@ -213,22 +208,11 @@ ax.axhline(
 
 # Plot formatting
 ax.set_title(
-    "Forecast of US employment growth rate",
+    "Forecast of US Employment Growth Rate",
     fontsize=14)
-
 ax.set_xlabel("Years")
 ax.set_ylabel("Percent")
-
-ax.grid(
-    True,
-    color="#eeeeee",
-    linewidth=0.8
-)
-
-ax.legend(
-    loc="upper left"
-)
-
+ax.legend(loc="upper left")
 plt.tight_layout()
 plt.savefig("forecast.png", dpi=300, bbox_inches="tight")
 plt.show()
