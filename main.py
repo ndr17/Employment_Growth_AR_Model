@@ -27,6 +27,7 @@ axes[0].set_ylabel("")
 
 # Year-on-year employment growth rate
 axes[1].plot(df.index, df["Growth_Rate"], color="black", linewidth=1.0)
+axes[1].set_title("Employment YoY Growth Rate")
 axes[1].axhline(y=0, color="red", linewidth=1)
 axes[1].set_xlabel("Year")
 axes[1].set_ylabel("")
